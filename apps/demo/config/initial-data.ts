@@ -6,13 +6,13 @@ export const initialData: Record<string, UserData> = {
       {
         type: "Hero",
         props: {
-          title: "This page was built with Puck",
+          title: "Build Amazing Pages with AI",
           description:
-            "Puck is the self-hosted visual editor for React. Bring your own components and make site changes instantly, without a deploy.",
+            "Easey AI Page Builder combines the power of artificial intelligence with intuitive drag-and-drop functionality to help you create stunning web pages in minutes.",
           buttons: [
             {
-              label: "Visit GitHub",
-              href: "https://github.com/measuredco/puck",
+              label: "Get Started",
+              href: "#",
             },
             { label: "Edit this page", href: "/edit", variant: "secondary" },
           ],
@@ -40,7 +40,7 @@ export const initialData: Record<string, UserData> = {
         props: {
           align: "center",
           level: "2",
-          text: "Drag-and-drop your own React components",
+          text: "AI-Powered Component Generation",
           layout: { padding: "0px" },
           size: "xxl",
           id: "Heading-1687297593514",
@@ -58,7 +58,7 @@ export const initialData: Record<string, UserData> = {
         type: "Text",
         props: {
           align: "center",
-          text: "Configure Puck with your own components to make change for your marketing pages without a developer.",
+          text: "Configure Easey AI with your own components and let artificial intelligence suggest the perfect layouts and content for your pages.",
           layout: { padding: "0px" },
           size: "m",
           id: "Text-1687297621556",
@@ -83,9 +83,9 @@ export const initialData: Record<string, UserData> = {
             {
               type: "Card",
               props: {
-                title: "Built for content teams",
+                title: "AI-Powered Design",
                 description:
-                  "Puck enables content teams to make changes to their content without a developer or breaking the UI.",
+                  "Easey AI automatically suggests optimal layouts, color schemes, and component arrangements based on your content and brand guidelines.",
                 icon: "pen-tool",
                 mode: "flat",
                 layout: { grow: true, spanCol: 1, spanRow: 1, padding: "0px" },
@@ -95,9 +95,9 @@ export const initialData: Record<string, UserData> = {
             {
               type: "Card",
               props: {
-                title: "Easy to integrate",
+                title: "Smart Integration",
                 description:
-                  "Front-end developers can easily integrate their own components using a familiar React API.",
+                  "Front-end developers can easily integrate their own components while AI handles the complex layout optimization and content suggestions.",
                 icon: "git-merge",
                 mode: "flat",
                 layout: { grow: true, spanCol: 1, spanRow: 1, padding: "0px" },
@@ -109,7 +109,7 @@ export const initialData: Record<string, UserData> = {
               props: {
                 title: "No vendor lock-in",
                 description:
-                  "Completely open-source, Puck is designed to be integrated into your existing React application.",
+                  "Completely open-source, Easey AI is designed to be integrated into your existing React application with full data ownership.",
                 icon: "github",
                 mode: "flat",
                 layout: { grow: true, spanCol: 1, spanRow: 1, padding: "0px" },
@@ -398,15 +398,15 @@ export const initialData: Record<string, UserData> = {
         },
       },
     ],
-    root: { props: { title: "Puck Example" } },
+    root: { props: { title: "Easey AI Page Builder" } },
     zones: {},
   },
   "/pricing": {
     content: [],
-    root: { props: { title: "Pricing" } },
+    root: { props: { title: "Easey AI Pricing" } },
   },
   "/about": {
     content: [],
-    root: { props: { title: "About Us" } },
+    root: { props: { title: "About Easey AI" } },
   },
 };

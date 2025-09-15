@@ -11,7 +11,7 @@ export const Root: RootConfig<{
   };
 }> = {
   defaultProps: {
-    title: "My Page",
+    title: "Easey AI Page Builder",
   },
   render: ({ puck: { isEditing, renderDropZone: DropZone } }) => {
     return (
@@ -22,29 +22,29 @@ export const Root: RootConfig<{
         <DropZone zone="default-zone" style={{ flexGrow: 1 }} />
 
         <Footer>
-          <Footer.List title="Section">
-            <Footer.Link href="#">Label</Footer.Link>
-            <Footer.Link href="#">Label</Footer.Link>
-            <Footer.Link href="#">Label</Footer.Link>
-            <Footer.Link href="#">Label</Footer.Link>
+          <Footer.List title="Product">
+            <Footer.Link href="#">Features</Footer.Link>
+            <Footer.Link href="#">AI Components</Footer.Link>
+            <Footer.Link href="#">Templates</Footer.Link>
+            <Footer.Link href="#">Pricing</Footer.Link>
           </Footer.List>
-          <Footer.List title="Section">
-            <Footer.Link href="#">Label</Footer.Link>
-            <Footer.Link href="#">Label</Footer.Link>
-            <Footer.Link href="#">Label</Footer.Link>
-            <Footer.Link href="#">Label</Footer.Link>
+          <Footer.List title="Resources">
+            <Footer.Link href="#">Documentation</Footer.Link>
+            <Footer.Link href="#">API Reference</Footer.Link>
+            <Footer.Link href="#">Community</Footer.Link>
+            <Footer.Link href="#">Support</Footer.Link>
           </Footer.List>
-          <Footer.List title="Section">
-            <Footer.Link href="#">Label</Footer.Link>
-            <Footer.Link href="#">Label</Footer.Link>
-            <Footer.Link href="#">Label</Footer.Link>
-            <Footer.Link href="#">Label</Footer.Link>
+          <Footer.List title="Company">
+            <Footer.Link href="#">About</Footer.Link>
+            <Footer.Link href="#">Blog</Footer.Link>
+            <Footer.Link href="#">Careers</Footer.Link>
+            <Footer.Link href="#">Contact</Footer.Link>
           </Footer.List>
-          <Footer.List title="Section">
-            <Footer.Link href="#">Label</Footer.Link>
-            <Footer.Link href="#">Label</Footer.Link>
-            <Footer.Link href="#">Label</Footer.Link>
-            <Footer.Link href="#">Label</Footer.Link>
+          <Footer.List title="Legal">
+            <Footer.Link href="#">Privacy</Footer.Link>
+            <Footer.Link href="#">Terms</Footer.Link>
+            <Footer.Link href="#">Security</Footer.Link>
+            <Footer.Link href="#">License</Footer.Link>
           </Footer.List>
         </Footer>
       </div>

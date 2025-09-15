@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "easey-ai-docs",
   "version": "0.20.2",
   "private": true,
   "scripts": {
@@ -17,7 +17,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "next": "^14.2.11",
+    "next": "^15.2.4",
     "next-sitemap": "^4.2.3",
     "nextra": "^3.2.5",
     "nextra-theme-docs": "^3.2.5",

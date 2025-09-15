@@ -1,13 +1,15 @@
 {
-  "name": "@measured/puck",
+  "name": "@easey-ai/page-builder",
   "version": "0.20.2",
-  "description": "The open-source visual editor for React",
-  "author": "Chris Villa <chris@puckeditor.com>",
-  "repository": "measuredco/puck",
-  "bugs": "https://github.com/measuredco/puck/issues",
-  "homepage": "https://puckeditor.com",
+  "description": "The intelligent AI-powered visual editor for React",
+  "author": "Easey AI Team <team@easey.ai>",
+  "repository": "easey-ai/page-builder",
+  "bugs": "https://github.com/easey-ai/page-builder/issues",
+  "homepage": "https://easey.ai",
   "keywords": [
-    "puck",
+    "easey-ai",
+    "ai",
+    "artificial-intelligence",
     "visual",
     "editor",
     "react",
@@ -22,7 +24,9 @@
     "no-code",
     "javascript",
     "typescript",
-    "WYSIWYG"
+    "WYSIWYG",
+    "machine-learning",
+    "smart-components"
   ],
   "private": false,
   "main": "./dist/index.js",
@@ -62,7 +66,7 @@
     "lint": "eslint \"**/*.ts*\"",
     "build": "rm -rf dist && tsup bundle/index.ts bundle/rsc.tsx bundle/no-external.ts",
     "test": "jest",
-    "prepare": "cp ../../README.md . && yarn build",
+    "prepare": "cp ../../README.md . && npm run build",
     "postpublish": "rm README.md"
   },
   "files": [

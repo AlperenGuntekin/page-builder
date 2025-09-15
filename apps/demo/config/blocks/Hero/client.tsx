@@ -144,10 +144,13 @@ export const Hero: ComponentConfig<{
     padding: { type: "userField", option: true },
   },
   defaultProps: {
-    title: "Hero",
+    title: "Build Amazing Pages with AI",
     align: "left",
-    description: "Description",
-    buttons: [{ label: "Learn more", href: "#" }],
+    description: "Easey AI Page Builder combines the power of artificial intelligence with intuitive drag-and-drop functionality to help you create stunning web pages in minutes.",
+    buttons: [
+      { label: "Get Started", href: "#", variant: "primary" },
+      { label: "View Demo", href: "#", variant: "secondary" }
+    ],
     padding: "64px",
   },
   /**

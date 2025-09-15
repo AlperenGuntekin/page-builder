@@ -33,9 +33,11 @@ const NavItem = ({ label, href }: { label: string; href: string }) => {
 const Header = ({ editMode }: { editMode: boolean }) => (
   <div className={getClassName()}>
     <header className={getClassName("inner")}>
-      <div className={getClassName("logo")}>LOGO</div>
+      <div className={getClassName("logo")}>Easey AI</div>
       <nav className={getClassName("items")}>
         <NavItem label="Home" href={`${editMode ? "" : "/"}`} />
+        <NavItem label="Features" href={editMode ? "" : "/features"} />
+        <NavItem label="AI Components" href={editMode ? "" : "/ai-components"} />
         <NavItem label="Pricing" href={editMode ? "" : "/pricing"} />
         <NavItem label="About" href={editMode ? "" : "/about"} />
       </nav>
