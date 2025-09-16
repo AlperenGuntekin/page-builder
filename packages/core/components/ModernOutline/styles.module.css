@@ -1,0 +1,369 @@
+/* Simple Outline Styles */
+.outline-container {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 8px;
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.outline-content {
+  position: relative;
+}
+
+/* Layer Tree Styles */
+.layer-tree {
+  position: relative;
+}
+
+.zone-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+  padding: 4px 6px;
+  background: #f9fafb;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.layer-list {
+  position: relative;
+}
+
+/* Layer Styles */
+.layer {
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.layer-content {
+  position: relative;
+}
+
+.layer-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  background: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  position: relative;
+}
+
+.layer-item:hover {
+  background: #f9fafb;
+}
+
+.layer-item--selected {
+  background: #e3f2fd;
+  border-color: #2196f3;
+}
+
+.layer-item--hovering {
+  background: #f5f5f5;
+}
+
+.layer-item--child-selected {
+  background: #f9fafb;
+}
+
+/* Expand Button */
+.expand-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #9ca3af;
+  transition: color 0.15s ease;
+  flex-shrink: 0;
+}
+
+.expand-button:hover {
+  color: #6b7280;
+}
+
+/* Component Icon */
+.component-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+/* Component Label */
+.component-label {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex: 1;
+  min-width: 0;
+}
+
+.component-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.component-type {
+  font-size: 11px;
+  color: #9ca3af;
+  font-weight: 400;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Layer Actions */
+.layer-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  opacity: 0.7;
+  transition: opacity 0.15s ease;
+}
+
+.layer-item:hover .layer-actions {
+  opacity: 1;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #9ca3af;
+  transition: color 0.15s ease;
+}
+
+.action-button:hover {
+  color: #6b7280;
+}
+
+/* Actions Dropdown */
+.actions-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 9999;
+  margin-top: 4px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  min-width: 120px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #374151;
+  transition: background-color 0.15s ease;
+  text-align: left;
+}
+
+.dropdown-item:hover {
+  background: #f9fafb;
+}
+
+/* Nested Zones */
+.nested-zones {
+  margin-top: 2px;
+  padding-left: 12px;
+  border-left: 1px solid #e5e7eb;
+  position: relative;
+}
+
+/* Empty State */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 12px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.empty-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  color: #d1d5db;
+  margin-bottom: 10px;
+}
+
+/* Scrollbar Styling */
+.outline-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.outline-container::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.outline-container::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 2px;
+}
+
+.outline-container::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Simple Drag & Drop Styles */
+.simple-drag-drop {
+  position: relative;
+  margin-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.simple-drag-drop--dragging {
+  opacity: 0.6;
+  transform: scale(1.02);
+  z-index: 1000;
+}
+
+.simple-drag-drop--drag-over {
+  background: rgba(59, 130, 246, 0.1);
+  border: 2px dashed rgba(59, 130, 246, 0.4);
+  border-radius: 6px;
+}
+
+.simple-drag-handle {
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  border-radius: 4px;
+  cursor: grab;
+  color: #64748b;
+  transition: all 0.2s ease;
+  opacity: 0;
+  z-index: 10;
+}
+
+.simple-drag-drop:hover .simple-drag-handle {
+  opacity: 1;
+}
+
+.simple-drag-handle:hover {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #3b82f6;
+}
+
+.simple-drag-handle:active {
+  cursor: grabbing;
+  transform: translateY(-50%) scale(0.95);
+}
+
+.simple-drag-content {
+  position: relative;
+  z-index: 1;
+}
+
+.simple-dropzone {
+  position: relative;
+  margin: 1px 0;
+  border-radius: 2px;
+  transition: opacity 0.15s ease;
+}
+
+.simple-dropzone--empty {
+  min-height: 20px;
+}
+
+.simple-dropzone--drag-over {
+  background: rgba(59, 130, 246, 0.1);
+  border: 2px dashed rgba(59, 130, 246, 0.4);
+  border-radius: 4px;
+}
+
+.simple-dropzone-content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 4px;
+  opacity: 0.3;
+}
+
+.simple-dropzone--drag-over .simple-dropzone-content {
+  opacity: 1;
+}
+
+.simple-dropzone-line {
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.simple-dropzone--drag-over .simple-dropzone-line {
+  background: #3b82f6;
+  height: 2px;
+}
+
+/* Focus States for Accessibility */
+.layer-item:focus-visible {
+  outline: 2px solid rgba(59, 130, 246, 0.6);
+  outline-offset: 2px;
+}
+
+.action-button:focus-visible {
+  outline: 2px solid rgba(59, 130, 246, 0.6);
+  outline-offset: 2px;
+}
+
+.expand-button:focus-visible {
+  outline: 2px solid rgba(59, 130, 246, 0.6);
+  outline-offset: 2px;
+}
+

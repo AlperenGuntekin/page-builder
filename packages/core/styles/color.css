@@ -84,3 +84,23 @@
   --puck-color-black: #000000;
   --puck-color-white: #ffffff;
 }
+
+/* Modern Outline Preview Hover Effects */
+.preview-hover {
+  outline: 2px solid rgba(59, 130, 246, 0.6) !important;
+  outline-offset: 2px !important;
+  transition: outline 0.2s ease !important;
+}
+
+.preview-hover::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: -1;
+}
