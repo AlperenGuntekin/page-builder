@@ -49,6 +49,11 @@
       "import": "./dist/rsc.mjs",
       "require": "./dist/rsc.js"
     },
+    "./lib/converters": {
+      "types": "./dist/lib/converters/index.d.ts",
+      "import": "./dist/lib/converters/index.mjs",
+      "require": "./dist/lib/converters/index.js"
+    },
     "./puck.css": "./dist/index.css",
     "./no-external.css": "./dist/no-external.css",
     "./dist/index.css": "./dist/index.css",
@@ -64,7 +69,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
-    "build": "rm -rf dist && tsup bundle/index.ts bundle/rsc.tsx bundle/no-external.ts",
+    "build": "rm -rf dist && tsup bundle/index.ts bundle/rsc.tsx bundle/no-external.ts lib/converters/index.ts",
     "test": "jest",
     "prepare": "cp ../../README.md . && npm run build",
     "postpublish": "rm README.md"
